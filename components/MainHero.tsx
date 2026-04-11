@@ -3,10 +3,15 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const fadeUp = (delay = 0) => ({
+/*const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 32 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] },
+});*/
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 32 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.9, delay, ease: "easeOut" as const },
 });
 
 export default function Hero() {
@@ -217,8 +222,8 @@ export default function Hero() {
               ))}
             </div>
 
-            {/* CTAs /}
-            <div
+            {/* CTAs */}
+            {/*<div
               className="mt-6 pt-5 flex flex-col gap-2.5"
               style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
             >
