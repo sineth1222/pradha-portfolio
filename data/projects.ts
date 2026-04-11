@@ -2,6 +2,7 @@ export type Project = {
   id: string;
   title: string;
   category: string;
+  image: string;
   categoryTag:
     | "Full Stack"
     | "Web App"
@@ -31,6 +32,7 @@ export const projects: Project[] = [
     id: "rentzy",
     title: "Rentzy",
     category: "Full Stack · Next.js",
+    image: "/assets/work/rentzy.png",
     categoryTag: "Full Stack",
     client: "PraDha Solutions",
     industry: "Rental Marketplace",
@@ -59,8 +61,8 @@ export const projects: Project[] = [
       "Stripe",
       "PostgreSQL",
     ],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://anyrenty-icme.vercel.app/",
+    githubUrl: "https://github.com/sineth1222/rentzy",
     featured: true,
     color: "bg-amber-50",
     accentColor: "#b8922a",
@@ -69,6 +71,7 @@ export const projects: Project[] = [
     id: "sagea",
     title: "Sagea",
     category: "Web App · React",
+    image: "/assets/work/sagea.png",
     categoryTag: "Web App",
     client: "Sagea Inc.",
     industry: "Productivity SaaS",
@@ -90,8 +93,8 @@ export const projects: Project[] = [
       { label: "Migration downtime", value: "Zero" },
     ],
     tech: ["React", "Tailwind CSS", "React Query", "Node.js", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://anyrenty-icme.vercel.app/",
+    githubUrl: "https://github.com/sineth1222/rentzy",
     featured: true,
     color: "bg-sky-50",
     accentColor: "#0284c7",
@@ -100,6 +103,7 @@ export const projects: Project[] = [
     id: "raptorcv",
     title: "RaptorCV",
     category: "SaaS · React",
+    image: "/assets/work/raptorcv.png",
     categoryTag: "SaaS",
     client: "PraDha Solutions",
     industry: "HR / Career Tech",
@@ -131,6 +135,7 @@ export const projects: Project[] = [
     id: "pradha-rental",
     title: "PraDha Rental",
     category: "Full Stack · Next.js",
+    image: "/assets/work/pradharental.png",
     categoryTag: "Full Stack",
     client: "PraDha Solutions (Internal)",
     industry: "Operations / Internal Tooling",
@@ -161,6 +166,7 @@ export const projects: Project[] = [
     id: "newspaper-portal",
     title: "Newspaper Portal",
     category: "Web Platform · React",
+    image: "/assets/work/newspaper.png",
     categoryTag: "Web App",
     client: "Regional Media Group",
     industry: "Digital Media",
@@ -191,6 +197,7 @@ export const projects: Project[] = [
     id: "pos-system",
     title: "POS System",
     category: "Desktop App · Electron",
+    image: "/assets/work/possystem.png",
     categoryTag: "Desktop",
     client: "Retail Client, Colombo",
     industry: "Retail",

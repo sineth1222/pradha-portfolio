@@ -38,7 +38,7 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2 text-2xl md:text-3xl font-serif tracking-tighter font-bold"
         >
-          PraDha <span className="text-gold text-xl md:text-2xl">IT⟡</span>
+          PraDha<span className="text-gold text-2xl md:text-3xl">.</span>
         </Link>
 
         {/* Desktop Links */}
@@ -62,7 +62,7 @@ export default function Navbar() {
           href="mailto:sinethmashenka@gmail.com"
           className="hidden md:block bg-gold text-white px-7 py-3 text-xs font-medium tracking-widest rounded-sm hover:bg-amber-600 transition-colors"
         >
-          HIRE ME
+          HIRE US
         </motion.a>
 
         {/* Mobile Hamburger */}

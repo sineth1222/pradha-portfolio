@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
@@ -47,7 +48,15 @@ export function ProjectCard({
     >
       {/* Thumb */}
       <div className="h-44 relative overflow-hidden">
-        <BrowserMock color={project.color} />
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <BrowserMock color={project.color} />
+        )}
         {/* overlay on hover */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
       </div>
@@ -155,7 +164,16 @@ function ProjectDetail({
           <div
             className={`w-full h-56 rounded-sm overflow-hidden border border-stone-200`}
           >
-            <BrowserMock color={project.color} />
+            {/* Thumb */}
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <BrowserMock color={project.color} />
+            )}
           </div>
         </div>
 

@@ -130,10 +130,23 @@ export default function PortfolioPage() {
                   >
                     {/* Thumb */}
                     <div className="h-48 relative overflow-hidden flex-shrink-0">
-                      <BrowserMock
+                      {/*<BrowserMock
                         color={p.color}
                         accentColor={p.accentColor}
-                      />
+                      />*/}
+                      {/* Thumb */}
+                      {p.image ? (
+                        <img
+                          src={p.image}
+                          alt={p.title}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <BrowserMock
+                          color={p.color}
+                          accentColor={p.accentColor}
+                        />
+                      )}
                       {/* Hover CTA */}
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/8 transition-colors duration-300 flex items-center justify-center">
                         <span className="opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 bg-white/95 backdrop-blur-sm text-[10px] font-medium tracking-widest uppercase px-5 py-2.5 rounded-sm shadow-sm">

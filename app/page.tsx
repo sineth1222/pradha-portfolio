@@ -2,7 +2,9 @@
 // app/page.tsx
 
 import AnimatedSection from "@/components/AnimatedSection";
+import FounderSection from "@/components/Foundersection";
 import Hero from "@/components/Hero";
+import MainHero from "@/components/MainHero";
 import SelectedWorks from "@/components/SelectedWorks";
 import Services from "@/components/Services";
 //import Services from "@/components/Services";
@@ -13,7 +15,9 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-white">
       {/* ── HERO ── */}
-      <Hero />
+      <MainHero />
+      <FounderSection />
+      {/*<Hero />*/}
 
       {/* ── SERVICES ── */}
       <AnimatedSection>
@@ -21,6 +25,179 @@ export default function Home() {
       </AnimatedSection>
 
       {/* ── TOOLSET ── */}
+      <AnimatedSection>
+        <section className="py-24 px-6 md:px-10 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-14">
+              <p className="text-gold text-[10px] tracking-[3.5px] uppercase mb-2">
+                Core Stack
+              </p>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight">
+                The <em className="text-gold not-italic italic">Toolset</em>
+              </h2>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+              {[
+                {
+                  name: "React",
+                  svg: (
+                    <svg viewBox="0 0 24 24" className="w-10 h-10" fill="none">
+                      <circle cx="12" cy="12" r="2.05" fill="#D4A017" />
+                      <ellipse
+                        cx="12"
+                        cy="12"
+                        rx="10"
+                        ry="4"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                        fill="none"
+                      />
+                      <ellipse
+                        cx="12"
+                        cy="12"
+                        rx="10"
+                        ry="4"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                        fill="none"
+                        transform="rotate(60 12 12)"
+                      />
+                      <ellipse
+                        cx="12"
+                        cy="12"
+                        rx="10"
+                        ry="4"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                        fill="none"
+                        transform="rotate(120 12 12)"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  name: "TypeScript",
+                  svg: (
+                    <svg viewBox="0 0 24 24" className="w-10 h-10" fill="none">
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="2"
+                        fill="#D4A017"
+                        opacity="0.15"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                      />
+                      <text
+                        x="4"
+                        y="17"
+                        fontSize="10"
+                        fontWeight="bold"
+                        fill="#D4A017"
+                        fontFamily="monospace"
+                      >
+                        TS
+                      </text>
+                    </svg>
+                  ),
+                },
+                {
+                  name: "Next.js",
+                  svg: (
+                    <svg viewBox="0 0 24 24" className="w-10 h-10" fill="none">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                      />
+                      <path
+                        d="M8 16.5V8l8 10V8"
+                        stroke="#D4A017"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  name: "Tailwind",
+                  svg: (
+                    <svg viewBox="0 0 24 24" className="w-10 h-10" fill="none">
+                      <path
+                        d="M12 6C9.6 6 8.1 7.2 7.5 9.6c.9-1.2 1.95-1.65 3.15-1.35.685.171 1.174.667 1.715 1.215C13.29 10.53 14.21 11.5 16.5 11.5c2.4 0 3.9-1.2 4.5-3.6-.9 1.2-1.95 1.65-3.15 1.35-.685-.171-1.174-.667-1.715-1.215C15.21 6.97 14.29 6 12 6zM7.5 11.5C5.1 11.5 3.6 12.7 3 15.1c.9-1.2 1.95-1.65 3.15-1.35.685.171 1.174.667 1.715 1.215C8.79 16.03 9.71 17 12 17c2.4 0 3.9-1.2 4.5-3.6-.9 1.2-1.95 1.65-3.15 1.35-.685-.171-1.174-.667-1.715-1.215C10.71 12.47 9.79 11.5 7.5 11.5z"
+                        fill="#D4A017"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  name: "Node.js",
+                  svg: (
+                    <svg viewBox="0 0 24 24" className="w-10 h-10" fill="none">
+                      <path
+                        d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                        fill="none"
+                      />
+                      <path
+                        d="M12 2v20M3 7l9 5 9-5"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                        opacity="0.5"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  name: "PostgreSQL",
+                  svg: (
+                    <svg viewBox="0 0 24 24" className="w-10 h-10" fill="none">
+                      <ellipse
+                        cx="12"
+                        cy="7"
+                        rx="8"
+                        ry="3.5"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                      />
+                      <path
+                        d="M4 7v5c0 1.933 3.582 3.5 8 3.5s8-1.567 8-3.5V7"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                      />
+                      <path
+                        d="M4 12v5c0 1.933 3.582 3.5 8 3.5s8-1.567 8-3.5v-5"
+                        stroke="#D4A017"
+                        strokeWidth="1.2"
+                      />
+                    </svg>
+                  ),
+                },
+              ].map((tech) => (
+                <div
+                  key={tech.name}
+                  className="group flex flex-col items-center gap-3 p-6 bg-white border border-stone-200 rounded-sm hover:border-gold/50 hover:shadow-md transition-all duration-300 cursor-default"
+                >
+                  <div className="group-hover:scale-110 transition-transform duration-300">
+                    {tech.svg}
+                  </div>
+                  <span className="text-xs font-medium tracking-widest text-center">
+                    {tech.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
+
+      {/* ── TOOLSET ── /}
       <AnimatedSection>
         <section className="py-24 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
@@ -56,7 +233,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </AnimatedSection>
+      </AnimatedSection>*/}
 
       {/* ── SELECTED WORKS ── */}
       <AnimatedSection>

@@ -184,10 +184,19 @@ export default async function ProjectDetailPage({
       <section className="py-14 px-6 md:px-10 bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto">
           <div className="w-full h-72 md:h-[420px] rounded-sm overflow-hidden border border-stone-200 shadow-sm">
-            <BrowserMock
-              color={project.color}
-              accentColor={project.accentColor}
-            />
+            {/* Thumb */}
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <BrowserMock
+                color={project.color}
+                accentColor={project.accentColor}
+              />
+            )}
           </div>
         </div>
       </section>
@@ -267,6 +276,7 @@ export default async function ProjectDetailPage({
                 className="group bg-white border border-stone-200 overflow-hidden hover:shadow-lg hover:border-stone-300 transition-all"
               >
                 <div className={`h-36 ${p.color}`} />
+
                 <div className="p-5">
                   <p
                     className="text-[10px] tracking-[2px] uppercase font-medium mb-1"
