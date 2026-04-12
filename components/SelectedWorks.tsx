@@ -228,7 +228,7 @@ function ProjectDetail({
 /* ─── Selected Works Section ─── */
 export default function SelectedWorks() {
   const [selected, setSelected] = useState<Project | null>(null);
-  const featured = projects;
+  const featured = projects.slice(0, 6);
 
   const handleSelect = (project: Project) => {
     if (selected?.id === project.id) {

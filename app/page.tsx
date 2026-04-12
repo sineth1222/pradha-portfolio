@@ -261,7 +261,7 @@ export default function Home() {
             engineering and thoughtful design.
           </p>
           <a
-            href="mailto:sinethmashenka@gmail.com"
+            href="mailto:sinethmashenka1222@gmail.com"
             className="inline-block bg-gold text-white px-12 py-5 text-xs font-medium tracking-widest uppercase rounded-sm hover:bg-amber-600 transition-colors"
           >
             Get In Touch →
