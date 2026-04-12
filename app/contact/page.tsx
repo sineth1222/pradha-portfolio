@@ -621,7 +621,7 @@ export default function ContactPage() {
               </p>
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://wa.me/94XXXXXXXXX?text=Hi%20PraDha%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                  href="https://wa.me/94705089955?text=Hi%20PraDha%2C%20I%27d%20like%20to%20discuss%20a%20project"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 p-4 bg-[#25D366]/6 border border-[#25D366]/25 rounded-sm hover:bg-[#25D366]/12 hover:border-[#25D366]/45 transition-all"
@@ -727,11 +727,19 @@ export default function ContactPage() {
             {/* Social links */}
             <div className="flex flex-col gap-2">
               {[
-                { l: "GitHub", href: "#", sub: "github.com/sineth" },
-                { l: "LinkedIn", href: "#", sub: "linkedin.com/in/sineth" },
+                {
+                  l: "GitHub",
+                  href: "https://github.com/sineth1222",
+                  sub: "github.com/sineth",
+                },
+                {
+                  l: "LinkedIn",
+                  href: "https://www.linkedin.com/in/sineth-mashenka-113122241/",
+                  sub: "linkedin.com/in/sineth",
+                },
                 {
                   l: "Portfolio",
-                  href: "https://www.sinethmashenka.shop",
+                  href: "https://sinethmashenka-protfolio--beta.vercel.app/",
                   sub: "sinethmashenka.shop",
                 },
               ].map((s) => (

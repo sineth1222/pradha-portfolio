@@ -132,7 +132,10 @@ function ProjectDetail({
       className="mt-10 bg-white border border-stone-200 shadow-sm overflow-hidden"
     >
       {/* Header */}
-      <div className="bg-cream px-6 md:px-12 py-8 md:py-10 border-b border-stone-200 flex flex-col gap-4">
+      <div
+        className="px-6 md:px-12 py-8 md:py-10 border-b border-stone-200 flex flex-col gap-4"
+        style={{ backgroundColor: "#f5f2ec" }}
+      >
         <div>
           <div className="flex items-center gap-2 text-gold text-[10px] tracking-[3px] uppercase mb-3">
             <span className="w-4 h-px bg-gold" />
@@ -244,7 +247,11 @@ export default function SelectedWorks() {
   };
 
   return (
-    <section id="projects" className="py-24 px-6 md:px-10 bg-cream">
+    <section
+      id="projects"
+      className="py-24 px-6 md:px-10 "
+      style={{ backgroundColor: "#f5f2ec" }}
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-end mb-14">
@@ -266,7 +273,7 @@ export default function SelectedWorks() {
         </div>
 
         {/* Grid — 1 col mobile, 2 col tablet, 3 col desktop */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featured.map((p) => (
             <ProjectCard
               key={p.id}

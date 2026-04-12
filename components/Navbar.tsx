@@ -59,7 +59,7 @@ export default function Navbar() {
         <motion.a
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
-          href="mailto:sinethmashenka@gmail.com"
+          href="/contact"
           className="hidden md:block bg-gold text-white px-7 py-3 text-xs font-medium tracking-widest rounded-sm hover:bg-amber-600 transition-colors"
         >
           HIRE US

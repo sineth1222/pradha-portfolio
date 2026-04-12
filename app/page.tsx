@@ -2,9 +2,11 @@
 // app/page.tsx
 
 import AnimatedSection from "@/components/AnimatedSection";
+import FAQSection from "@/components/FAQSection";
 import FounderSection from "@/components/Foundersection";
 import Hero from "@/components/Hero";
 import MainHero from "@/components/MainHero";
+import ProcessSection from "@/components/ProcessSection";
 import SelectedWorks from "@/components/SelectedWorks";
 import Services from "@/components/Services";
 //import Services from "@/components/Services";
@@ -238,6 +240,14 @@ export default function Home() {
       {/* ── SELECTED WORKS ── */}
       <AnimatedSection>
         <SelectedWorks />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <ProcessSection />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <FAQSection />
       </AnimatedSection>
 
       {/* ── CTA ── */}

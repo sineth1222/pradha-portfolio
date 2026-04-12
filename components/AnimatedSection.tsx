@@ -16,7 +16,7 @@ export default function AnimatedSection({ children }: { children: ReactNode }) {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.05 }}
       variants={container}
     >
       {children}
