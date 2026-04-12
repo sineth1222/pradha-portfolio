@@ -28,7 +28,7 @@ function BrowserMock({ color }: { color: string }) {
   );
 }
 
-//update123
+//update1234
 /* ─── Single Project Card ─── */
 export function ProjectCard({
   project,
