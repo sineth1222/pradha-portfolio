@@ -28,6 +28,7 @@ function BrowserMock({ color }: { color: string }) {
   );
 }
 
+//update the project card and detail panel to use framer motion for animations and transitions. Add a smooth fade-in effect when the project detail panel appears, and a slide-up effect when hovering over the project cards. Ensure that the animations are subtle and enhance the user experience without being distracting.
 /* ─── Single Project Card ─── */
 export function ProjectCard({
   project,
