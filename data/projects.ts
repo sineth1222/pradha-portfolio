@@ -29,6 +29,46 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "spice-sea",
+    title: "Spice Sea",
+    category: "E-commerce · Next.js",
+    image: "/assets/work/spicesea.png", // ඔයාගේ image path එක මෙතනට දාන්න
+    categoryTag: "Full Stack",
+    client: "Spice Sea - Premium Spices",
+    industry: "E-commerce / Food & Beverage",
+    year: "2026",
+    description:
+      "A premium online marketplace for authentic Maldivian fish, dried fish, and high-quality spices with a seamless Cash on Delivery system.",
+    fullDescription:
+      "Spice Sea is a specialized e-commerce platform bringing premium dry food products to customers. It features a full-blown admin ecosystem for inventory management, a real-time order tracking system, and a dedicated culinary section for recipes using the sold products.",
+    challenge:
+      "The client needed a way to manage high-volume spice and dry fish orders while providing a transparent tracking process for customers. They also required a robust back-office to handle inventory and order statuses (Pending, Shipped, Delivered) without needing technical knowledge.",
+    solution:
+      "Built using Next.js and Tailwind CSS for a high-performance frontend. Integrated Supabase (PostgreSQL) for secure data storage and Nodemailer for automated order notifications. Developed a custom Admin Dashboard that allows full CRUD operations on products and a dedicated 'Recipe' module to drive user engagement.",
+    outcome:
+      "Successfully launched an end-to-end e-commerce solution. The platform streamlined the ordering process through COD, eliminated manual order tracking errors via the status dashboard, and provided value-added content through the integrated recipe portal.",
+    results: [
+      { label: "Order Management", value: "Automated" },
+      { label: "Admin Control", value: "Full CRUD" },
+      { label: "Payment Method", value: "COD" },
+      { label: "Status Tracking", value: "Real-time" },
+    ],
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Nodemailer",
+      "TypeScript",
+      "Vercel",
+    ],
+    liveUrl: "https://spice-sea.vercel.app/",
+    githubUrl: "https://github.com/sineth1222/spice-sea", // GitHub link එක හරිද බලන්න
+    featured: true,
+    color: "bg-orange-50", // Spices වලට ගැලපෙන Warm පාටක්
+    accentColor: "#c2410c",
+  },
+  {
     id: "lacascade-hotel",
     title: "LaCascade Dining & Villa",
     category: "Hospitality · Next.js",
@@ -75,7 +115,7 @@ export const projects: Project[] = [
     categoryTag: "Web App",
     client: "Sagea Inc.",
     industry: "Productivity SaaS",
-    year: "2024",
+    year: "2025",
     description:
       "Full rebuild of a legacy jQuery product into a modern React SaaS — faster, scalable, and built to handle 10,000+ concurrent users.",
     fullDescription:
@@ -107,7 +147,7 @@ export const projects: Project[] = [
     categoryTag: "SaaS",
     client: "PraDha Solutions",
     industry: "HR / Career Tech",
-    year: "2023",
+    year: "2025",
     description:
       "CV builder SaaS with ATS-optimised templates, live preview, and one-click PDF export — 2,000+ CVs generated in 6 months.",
     fullDescription:
@@ -178,7 +218,7 @@ export const projects: Project[] = [
     categoryTag: "Full Stack",
     client: "PraDha Solutions (Internal)",
     industry: "Operations / Internal Tooling",
-    year: "2023",
+    year: "2025",
     description:
       "Internal rental management system replacing WhatsApp + spreadsheets — bookings, payments, and availability in one dashboard.",
     fullDescription:
@@ -209,7 +249,7 @@ export const projects: Project[] = [
     categoryTag: "Desktop",
     client: "Retail Client, Colombo",
     industry: "Retail",
-    year: "2022",
+    year: "2024",
     description:
       "Offline-first POS for a multi-branch retail business — eliminated Rs. 80,000/year in SaaS licensing and survived the 2022 power cuts.",
     fullDescription:
@@ -241,7 +281,7 @@ export const projects: Project[] = [
     categoryTag: "Web App",
     client: "Regional Media Group",
     industry: "Digital Media",
-    year: "2023",
+    year: "2024",
     description:
       "Full digital newspaper platform migrating a regional print publication online — 15,000 articles, 8,000 readers in 3 months.",
     fullDescription:
