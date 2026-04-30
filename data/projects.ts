@@ -29,6 +29,45 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "vesak-wishes",
+    title: "Vesak Wishes",
+    category: "Web App · Next.js",
+    image: "/assets/work/wesakwishes.jpeg", // ඔයාගේ image path එක මෙතනට දාන්න
+    categoryTag: "Web App",
+    client: "PraDha Solutions (Internal)",
+    industry: "Social Media / Culture",
+    year: "2026",
+    description:
+      "A digital greeting platform designed to share personalized Vesak wishes via WhatsApp and Email, reaching thousands of users during the season.",
+    fullDescription:
+      "Vesak Wishes is a community-focused web application built to digitize traditional greeting cards. It allows users to generate and share high-quality digital Vesak cards and messages instantly across social platforms, focusing on ease of use and mobile accessibility.",
+    challenge:
+      "The goal was to create a lightweight, high-traffic capable platform that could handle thousands of simultaneous users during the festive season. It needed to be highly shareable and performant on slow mobile connections.",
+    solution:
+      "Developed using Next.js for optimized performance and SEO. Implemented a seamless integration with the Web Share API for native mobile sharing (WhatsApp/Messenger). Used Tailwind CSS for a serene, spiritual UI design and optimized image assets for instant loading.",
+    outcome:
+      "Successfully launched as an internal initiative by PraDha Solutions. The platform facilitated thousands of digital greetings, promoting eco-friendly celebrations by reducing paper waste and connecting Sri Lankans globally.",
+    results: [
+      { label: "Social Shares", value: "High-Volume" },
+      { label: "Load Speed", value: "< 1s" },
+      { label: "Mobile Optimized", value: "100%" },
+      { label: "Eco Impact", value: "Paperless" },
+    ],
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Web Share API",
+      "Vercel",
+      "Lucide Icons",
+    ],
+    liveUrl: "https://vesak-wishes.vercel.app/",
+    githubUrl: "https://github.com/sineth1222/vesak-wishes", // GitHub link එක හරිද බලන්න
+    featured: false,
+    color: "bg-amber-50", // වෙසක් පහන් වල ආලෝකය නිරූපණය වන පාටක්
+    accentColor: "#d97706",
+  },
+  {
     id: "spice-sea",
     title: "Spice Sea",
     category: "E-commerce · Next.js",
@@ -76,7 +115,7 @@ export const projects: Project[] = [
     categoryTag: "Web App",
     client: "LaCascade Tangalle",
     industry: "Tourism & Hospitality",
-    year: "2025",
+    year: "2026",
     description:
       "A luxury boutique villa website for LaCascade Tangalle, featuring an immersive booking experience and local tourism guide.",
     fullDescription:
