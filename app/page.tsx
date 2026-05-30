@@ -18,7 +18,7 @@ export default function Home() {
     <main className="overflow-hidden bg-white">
       {/* ── HERO ── */}
       <MainHero />
-      <FounderSection />
+      {/*<FounderSection />*/}
       {/*<Hero />*/}
 
       {/* ── SERVICES ── */}
