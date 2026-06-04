@@ -29,6 +29,108 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "medistore-pos",
+    title: "Medistore POS",
+    category: "Pharmacy POS · Next.js",
+    image: "/assets/work/medistore-pos.png", // ඔයාගේ image path එක මෙතනට දාන්න
+    categoryTag: "Web App",
+    client: "Arogya Pharmacy",
+    industry: "Healthcare / Retail",
+    year: "2026",
+    description:
+      "A role-based Pharmacy Point-of-Sale system featuring secure authentication, inventory management, and specialized dashboards for Admins and Cashiers.",
+    fullDescription:
+      "Medistore POS is a modern, web-based management system tailored for pharmacies. It implements strict Role-Based Access Control (RBAC) to ensure security and operational integrity, providing specific feature access depending on whether the logged-in user is an Admin or a Cashier.",
+    challenge:
+      "The pharmacy needed a secure way to process sales while restricting access to sensitive business data like profit margins and inventory updates. Cashiers needed a fast billing interface, while Admins required full system control without overlapping access risks.",
+    solution:
+      "Built using Next.js for high performance and structured routing. Implemented a robust user role management system where authentication dynamically switches the user interface. Cashiers get an optimized checkout and billing screen, while Admins gain exclusive access to full inventory control, sales analytics, and user parameters.",
+    outcome:
+      "Successfully streamlined the pharmacy's daily operations. Prevented unauthorized access to backend financial data, reduced checkout times significantly, and provided a clear separation of duties between management and cashiers.",
+    results: [
+      { label: "Role Security", value: "100% Isolated" },
+      { label: "Billing Speed", value: "Fast UI" },
+      { label: "User Roles", value: "Admin & Cashier" },
+      { label: "Data Integrity", value: "High" },
+    ],
+    tech: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Vercel"],
+    liveUrl: "https://medistore-pos.vercel.app/",
+    githubUrl: "#", // GitHub link එකක් තියෙනවා නම් මෙතනට දාන්න
+    featured: true,
+    color: "bg-blue-50", // ඖෂධ සැලකට ගැලපෙන පිරිසිදු නිල්/නිල්-කොළ පාටක්
+    accentColor: "#2563eb",
+  },
+  {
+    id: "ceylon-trails",
+    title: "Ceylon Trails",
+    category: "Travel & AI · Next.js",
+    image: "/assets/work/ceylontrails.png", // ඔයාගේ image path එක මෙතනට දාන්න
+    categoryTag: "Full Stack",
+    client: "Ceylon Trails Tourist Agency",
+    industry: "Tourism & Travel Tech",
+    year: "2026",
+    description:
+      "An advanced tourism platform featuring an AI-powered tour planner and a comprehensive Admin dashboard with upcoming booking alerts.",
+    fullDescription:
+      "Ceylon Trails is a next-generation travel booking and planning web application. It integrates AI capabilities to allow travelers to customize their itineraries instantly, alongside a dedicated separate Admin portal for complete management of packages, bookings, and automated operational alerts.",
+    challenge:
+      "The agency wanted to stand out from traditional travel sites by offering automated, personalized trip planning. Additionally, they needed an efficient admin workflow to track urgent bookings without manually filtering lists daily.",
+    solution:
+      "Developed a full-stack Next.js platform integrating an AI module that allows users to seamlessly plan their custom tour packages based on preferences. Designed a separate Admin Panel with full CRUD capabilities for packages and bookings. Implemented an urgent alert system on the Admin Dashboard that dynamically highlights bookings scheduled within the next 7 days.",
+    outcome:
+      "Transformed user engagement through interactive AI planning. Dramatically reduced administrative overhead by automatically surfacing time-sensitive bookings, ensuring the agency never misses an upcoming tour deadline.",
+    results: [
+      { label: "Tour Planning", value: "AI-Powered" },
+      { label: "Urgent Alerts", value: "7-Day Window" },
+      { label: "Admin Control", value: "Full Dashboard" },
+      { label: "User Experience", value: "Highly Interactive" },
+    ],
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "AI Integration",
+      "TypeScript",
+      "Vercel",
+    ],
+    liveUrl: "https://ceylon-trails-two.vercel.app/",
+    githubUrl: "#", // GitHub link එකක් තියෙනවා නම් මෙතනට දාන්න
+    featured: true,
+    color: "bg-teal-50", // ලංකාවේ සංචාරක ව්‍යාපාරයට ගැළපෙන සොබාදහම් පාටක්
+    accentColor: "#0d9488",
+  },
+  {
+    id: "siena-clothing",
+    title: "Siena Clothing",
+    category: "E-commerce · Next.js",
+    image: "/assets/work/siena-clothing.png", // ඔයාගේ image path එක මෙතනට දාන්න
+    categoryTag: "Full Stack",
+    client: "Siena Clothing Shop",
+    industry: "E-commerce / Fashion Retail",
+    year: "2026",
+    description:
+      "A seamless fashion e-commerce storefront for customer ordering, paired with an advanced Admin panel for product catalog management.",
+    fullDescription:
+      "Siena Clothing is a dynamic online fashion store designed for smooth retail operations. It provides customers with an elegant interface to browse and order clothing, backed by an extensive administrative control panel that allows store managers to handle inventory in real time.",
+    challenge:
+      "The clothing brand needed a modern digital storefront to scale their sales online. They required an easy-to-use backend system that allows non-technical staff to rapidly upload new fashion collections and update stock availability.",
+    solution:
+      "Built a highly responsive web store using Next.js. Integrated a streamlined customer checkout flow for placing orders. Developed a robust Admin Panel equipped with full product management capabilities (Create, Read, Update, Delete) enabling instant updates to clothing items, prices, and visual variants.",
+    outcome:
+      "Successfully launched an end-to-end retail channel. Enabled the brand to digitize their inventory completely, giving them the ability to update their store dynamically and fulfill customer orders efficiently.",
+    results: [
+      { label: "Storefront UI", value: "Premium Fashion" },
+      { label: "Catalog Control", value: "Full CRUD" },
+      { label: "Order Placement", value: "Seamless" },
+      { label: "Mobile Shopping", value: "100% Optimized" },
+    ],
+    tech: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Vercel"],
+    liveUrl: "#",
+    githubUrl: "#", // GitHub link එකක් තියෙනවා නම් මෙතනට දාන්න
+    color: "bg-fuchsia-50", // Fashion/Clothing වලට ගැලපෙන Trendy පාටක්
+    accentColor: "#c026d3",
+  },
+  {
     id: "vesak-wishes",
     title: "Vesak Wishes",
     category: "Web App · Next.js",
