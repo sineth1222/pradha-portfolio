@@ -96,7 +96,7 @@ export default function RootLayout({
       <head>
         <meta
           name="google-site-verification"
-          content="S3do9-g7NLndcdp_GxNnSm7Fj22d6Mi1pTKL-0rTwbk"
+          content="Ed94a9RCOiYU6ZaZ4tvQ_dMfea-ya-D-fM9h0mNR3h0"
         />
       </head>
       <body className="bg-white text-black">
