@@ -2,6 +2,129 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import type { Metadata } from "next";
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// Project data object (ඔයාගේ existing data source use කරන්න)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+const projectData: Record<
+  string,
+  { title: string; description: string; image: string }
+> = {
+  "medistore-pos": {
+    title: "Medistore POS — Pharmacy Point-of-Sale System",
+    description:
+      "Role-based Pharmacy POS system with secure auth, inventory management, and dashboards for Admins and Cashiers. Built with Next.js for Arogya Pharmacy.",
+    image: "/assets/work/medistore-pos.png",
+  },
+  "ceylon-trails": {
+    title: "Ceylon Trails — AI-Powered Tourism Platform",
+    description:
+      "Advanced tourism platform with AI-powered tour planner and Admin dashboard with booking alerts. Built for Ceylon Trails Tourist Agency.",
+    image: "/assets/work/ceylontrails.png",
+  },
+  "siena-clothing": {
+    title: "Siena Clothing — Fashion E-commerce Platform",
+    description:
+      "Fashion e-commerce storefront with full product catalog management and Admin panel. Built with Next.js for Siena Clothing Shop.",
+    image: "/assets/work/siena-clothing.png",
+  },
+  "vesak-wishes": {
+    title: "Vesak Wishes — Digital Greeting Platform",
+    description:
+      "Viral digital greeting platform for personalized Vesak wishes via WhatsApp and Email. Reached thousands of users in one season.",
+    image: "/assets/work/wesakwishes.jpeg",
+  },
+  "spice-sea": {
+    title: "Spice Sea — Maldivian E-commerce Marketplace",
+    description:
+      "Premium online marketplace for authentic Maldivian fish and spices with Cash on Delivery system and full Admin control.",
+    image: "/assets/work/spicesea.png",
+  },
+  "lacascade-hotel": {
+    title: "LaCascade Dining & Villa — Luxury Hospitality Website",
+    description:
+      "Luxury boutique villa website for LaCascade Tangalle with immersive booking experience and local tourism guide. 95+ performance score.",
+    image: "/assets/work/lacascade2.jpeg",
+  },
+  sagea: {
+    title: "Sagea — React SaaS Rebuild (81% Faster)",
+    description:
+      "Full rebuild of a legacy jQuery product into modern React SaaS. 0.8s load time, built to handle 10,000+ concurrent users.",
+    image: "/og-image.png",
+  },
+  raptorcv: {
+    title: "RaptorCV — ATS-Optimised CV Builder SaaS",
+    description:
+      "CV builder SaaS with ATS-optimised templates, live preview, and one-click PDF export. 2,000+ CVs generated in 6 months. 4.8/5 rating.",
+    image: "/og-image.png",
+  },
+  rentzy: {
+    title: "Rentzy — Multi-Category Rental Marketplace",
+    description:
+      "Rental marketplace connecting providers with renters for vehicles, properties, and electronics. 30+ providers onboarded, 78% booking completion.",
+    image: "/og-image.png",
+  },
+  "pradha-rental": {
+    title: "PraDha Rental — Internal Rental Management System",
+    description:
+      "Internal rental management replacing WhatsApp + spreadsheets. Zero double-bookings. 4 min admin time per booking.",
+    image: "/og-image.png",
+  },
+  "pos-system": {
+    title: "POS System — Offline-First Retail POS",
+    description:
+      "Offline-first POS for a multi-branch Colombo retail business. Eliminated Rs. 80,000/year in SaaS costs. Survived 2022 power cuts.",
+    image: "/og-image.png",
+  },
+  "newspaper-portal": {
+    title: "Newspaper Portal — Digital Media Platform",
+    description:
+      "Full digital newspaper platform migrating regional print to online. 15,000 articles migrated. 8,000 readers in 3 months.",
+    image: "/og-image.png",
+  },
+};
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// Dynamic Metadata Generator
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
+  const project = projectData[params.id];
+
+  if (!project) {
+    return {
+      title: "Project | PraDha Solutions",
+      description: "Project details from PraDha Solutions.",
+    };
+  }
+
+  return {
+    title: project.title,
+    description: project.description,
+    alternates: {
+      canonical: `https://www.pradha.xyz/portfolio/${params.id}`,
+    },
+    openGraph: {
+      title: project.title,
+      description: project.description,
+      url: `https://www.pradha.xyz/portfolio/${params.id}`,
+      images: [
+        {
+          url: project.image,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+    },
+  };
+}
+
+// ↓ ඔයාගේ existing page component
 
 function BrowserMock({
   color,

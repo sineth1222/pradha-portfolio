@@ -1,6 +1,23 @@
 // app/case-study/page.tsx
 import Link from "next/link";
 import { projects, testimonials } from "@/data/projects";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Case Studies — How We Solve Real Problems",
+  description:
+    "In-depth case studies from PraDha Solutions. See how we reduced load times by 81%, built offline-first POS systems, and scaled SaaS platforms for 10,000+ users.",
+  alternates: {
+    canonical: "https://www.pradha.xyz/case-study",
+  },
+  openGraph: {
+    title: "Case Studies | PraDha Solutions",
+    description:
+      "Real results from real projects — performance metrics, technical breakdowns, and client outcomes.",
+    url: "https://www.pradha.xyz/case-study",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+};
 
 const featured = projects.filter((p) => p.featured);
 

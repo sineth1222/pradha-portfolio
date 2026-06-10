@@ -12,6 +12,25 @@ import Services from "@/components/Services";
 //import Services from "@/components/Services";
 //import SelectedWorks from "@/components/SelectedWorks";
 import { motion } from "framer-motion";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PraDha | Software Agency Sri Lanka — Web & Mobile Development",
+  description:
+    "PraDha Solutions is a Sri Lanka-based software agency. We build web apps, mobile apps, and e-commerce solutions using React, Next.js, and Node.js. Delivering since 2023.",
+  alternates: {
+    canonical: "https://www.pradha.xyz",
+  },
+  openGraph: {
+    title: "PraDha | Software Agency Sri Lanka",
+    description:
+      "We build digital products that solve real business problems — scalable web apps, mobile apps, and pixel-perfect interfaces.",
+    url: "https://www.pradha.xyz",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+};
+
+// ↓ ඔයාගේ existing export default function Home() { ... } එකම
 
 export default function Home() {
   return (
