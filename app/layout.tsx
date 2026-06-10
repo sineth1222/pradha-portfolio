@@ -93,6 +93,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="S3do9-g7NLndcdp_GxNnSm7Fj22d6Mi1pTKL-0rTwbk"
+        />
+      </head>
       <body className="bg-white text-black">
         {/* JSON-LD — Organization Structured Data */}
         <script
