@@ -18,5 +18,5 @@ export const metadata: Metadata = {
 };
 
 export default function PortfolioPage() {
-  <PortfolioPagez />;
+  return <PortfolioPagez />;
 }

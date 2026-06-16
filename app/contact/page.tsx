@@ -19,5 +19,5 @@ export const metadata: Metadata = {
 
 // ── Main component ────────────────────────────────────────────────────
 export default function ContactPage() {
-  <ContactPagez />;
+  return <ContactPagez />;
 }
