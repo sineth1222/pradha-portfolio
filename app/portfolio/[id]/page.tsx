@@ -306,7 +306,7 @@ export default async function ProjectDetailPage({
       {/* ── Preview ── */}
       <section className="py-14 px-6 md:px-10 bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto">
-          <div className="w-full h-72 md:h-[420px] rounded-sm overflow-hidden border border-stone-200 shadow-sm">
+          <div className="w-full h-auto rounded-sm overflow-hidden border border-stone-200 shadow-sm">
             {/* Thumb */}
             {project.image ? (
               <img

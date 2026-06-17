@@ -257,7 +257,7 @@ export default function ContactPage() {
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="https://wa.me/94705089955"
+                    href="https://wa.me/94760805884"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs font-medium tracking-widest uppercase px-7 py-3 bg-[#25D366] text-white rounded-sm hover:bg-green-600 transition-colors"
@@ -595,7 +595,7 @@ export default function ContactPage() {
                       <p className="text-[10px] text-gray-400 mt-4">
                         Prefer instant chat?{" "}
                         <a
-                          href="https://wa.me/94705089955"
+                          href="https://wa.me/94760805884"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-gold hover:underline"
@@ -621,7 +621,7 @@ export default function ContactPage() {
               </p>
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://wa.me/94705089955?text=Hi%20PraDha%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                  href="https://wa.me/94760805884?text=Hi%20PraDha%2C%20I%27d%20like%20to%20discuss%20a%20project"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 p-4 bg-[#25D366]/6 border border-[#25D366]/25 rounded-sm hover:bg-[#25D366]/12 hover:border-[#25D366]/45 transition-all"
@@ -649,7 +649,7 @@ export default function ContactPage() {
                 </a>
 
                 <a
-                  href="mailto:sinethmashenka1222@gmail.com"
+                  href="mailto:pradhainfo@gmail.com"
                   className="group flex items-center gap-3 p-4 bg-amber-50/60 border border-amber-200/50 rounded-sm hover:border-gold/50 transition-all"
                 >
                   <div className="w-9 h-9 rounded-sm bg-gold flex items-center justify-center flex-shrink-0">
@@ -670,7 +670,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-medium">Email</p>
                     <p className="text-[10px] text-gray-500 mt-0.5">
-                      sinethmashenka1222@gmail.com
+                      pradhainfo@gmail.com
                     </p>
                   </div>
                   <span className="ml-auto text-gold opacity-0 group-hover:opacity-100 transition-opacity">
@@ -729,18 +729,18 @@ export default function ContactPage() {
               {[
                 {
                   l: "GitHub",
-                  href: "https://github.com/sineth1222",
-                  sub: "github.com/sineth",
+                  href: "https://github.com/pradha",
+                  sub: "github.com/pradha",
                 },
                 {
                   l: "LinkedIn",
-                  href: "https://www.linkedin.com/in/sineth-mashenka-113122241/",
-                  sub: "linkedin.com/in/sineth",
+                  href: "https://www.linkedin.com/in/pradha-solutions-113122241/",
+                  sub: "linkedin.com/in/pradha",
                 },
                 {
                   l: "Portfolio",
-                  href: "https://sinethmashenka-protfolio--beta.vercel.app/",
-                  sub: "sinethmashenka.shop",
+                  href: "https://www.pradha.xyz",
+                  sub: "pradha.xyz",
                 },
               ].map((s) => (
                 <a

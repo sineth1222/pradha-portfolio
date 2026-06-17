@@ -129,7 +129,7 @@ export default function PortfolioPage() {
                     className="group flex flex-col bg-white border border-stone-200 overflow-hidden hover:shadow-xl hover:border-stone-300 transition-all duration-300 h-full"
                   >
                     {/* Thumb */}
-                    <div className="h-48 relative overflow-hidden flex-shrink-0">
+                    <div className="h-auto relative overflow-hidden flex-shrink-0">
                       {/*<BrowserMock
                         color={p.color}
                         accentColor={p.accentColor}

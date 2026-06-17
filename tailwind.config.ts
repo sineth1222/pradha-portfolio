@@ -5,6 +5,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        tylon: {
+          primary: "#ffffff",
+          secondary: "#141412",
+          card: "#1A1A17",
+          border: "#d4af37",
+          muted: "#6B6B60",
+          bg: "#0D0D0B",
+        },
         gold: "#d4af37",
         "gold-dark": "#b8922a",
         cream: "#f5f2ec",

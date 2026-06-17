@@ -45,7 +45,7 @@ export function ProjectCard({
       onClick={onClick}
     >
       {/* Thumb */}
-      <div className="h-44 relative overflow-hidden">
+      <div className="h-auto relative overflow-hidden">
         {project.image ? (
           <img
             src={project.image}
@@ -160,7 +160,7 @@ function ProjectDetail({
       <div className="px-6 md:px-12 py-8 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
         {/* Preview */}
         <div className="md:col-span-2">
-          <div className="w-full h-44 md:h-56 rounded-sm overflow-hidden border border-stone-200">
+          <div className="w-full h-auto rounded-sm overflow-hidden border border-stone-200">
             {project.image ? (
               <img
                 src={project.image}

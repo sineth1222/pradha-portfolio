@@ -64,7 +64,7 @@ export default function Hero() {
       <div
         className="absolute bottom-0 left-0 right-0 h-28 z-20 pointer-events-none"
         style={{
-          background: "linear-gradient(to top, #ffffff 0%, transparent 100%)",
+          background: "linear-gradient(to top, #000000 0%, transparent 100%)",
         }}
       />
 
@@ -270,7 +270,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Corner accent decorations */}
+          {/* Corner accent decorations /}
           <div
             className="absolute -bottom-3 -right-3 w-20 h-20 rounded-sm -z-10"
             style={{ background: "rgba(212,160,23,0.06)" }}
@@ -278,7 +278,7 @@ export default function Hero() {
           <div
             className="absolute -top-3 -left-3 w-14 h-14 rounded-sm -z-10"
             style={{ border: "1px solid rgba(212,160,23,0.16)" }}
-          />
+          />*/}
         </motion.div>
       </div>
 
@@ -295,10 +295,10 @@ export default function Hero() {
         >
           Scroll
         </span>
-        <div
+        {/*<div
           className="w-px h-8 animate-pulse"
           style={{ background: "rgba(212,160,23,0.45)" }}
-        />
+        />*/}
       </motion.div>
     </section>
   );

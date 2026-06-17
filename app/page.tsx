@@ -1,14 +1,19 @@
 /* eslint-disable react/no-unescaped-entities */
 // app/page.tsx
 
+import AboutSection from "@/components/AboutSection";
 import AnimatedSection from "@/components/AnimatedSection";
 import FAQSection from "@/components/FAQSection";
 import FounderSection from "@/components/Foundersection";
 import Hero from "@/components/Hero";
+import HowWeWork from "@/components/HowWeWork";
 import MainHero from "@/components/MainHero";
 import ProcessSection from "@/components/ProcessSection";
+import QASection from "@/components/QASection";
 import SelectedWorks from "@/components/SelectedWorks";
 import Services from "@/components/Services";
+import ServicesAnimation from "@/components/ServicesAnuimation";
+import StoriesSection from "@/components/StoriSection";
 //import Services from "@/components/Services";
 //import SelectedWorks from "@/components/SelectedWorks";
 import { motion } from "framer-motion";
@@ -40,9 +45,14 @@ export default function Home() {
       {/*<FounderSection />*/}
       {/*<Hero />*/}
 
+      <AboutSection />
+
+      <StoriesSection />
+
       {/* ── SERVICES ── */}
       <AnimatedSection>
-        <Services />
+        {/*<Services />*/}
+        <ServicesAnimation />
       </AnimatedSection>
 
       {/* ── TOOLSET ── */}
@@ -262,11 +272,13 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <ProcessSection />
+        {/*<ProcessSection />*/}
+        <HowWeWork />
       </AnimatedSection>
 
       <AnimatedSection>
-        <FAQSection />
+        {/*<FAQSection />*/}
+        <QASection />
       </AnimatedSection>
 
       {/* ── CTA ── */}

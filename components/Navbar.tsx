@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -55,19 +56,19 @@ export default function Navbar() {
       <nav
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
         style={{
-          background: transparent ? "transparent" : "rgba(255,255,255,0.97)",
-          borderBottom: transparent ? "none" : "1px solid #e8e5df",
+          background: transparent ? "transparent" : "#000000",
+          borderBottom: transparent ? "none" : "1px solid #0d0d0d",
           backdropFilter: transparent ? "none" : "blur(16px)",
           boxShadow: transparent ? "none" : "0 1px 24px rgba(0,0,0,0.05)",
         }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10">
-          <div className="flex items-center justify-between h-[72px]">
+          <div className="flex items-center justify-between h-[62px]">
             {/* ── Logo ── */}
             <Link
               href="/"
               className="font-serif text-2xl md:text-[26px] font-bold tracking-tight transition-colors duration-300"
-              style={{ color: transparent ? "#ffffff" : "#0d0d0d" }}
+              style={{ color: transparent ? "#ffffff" : "#ffffff" }}
             >
               PraDha
               <span style={{ color: "#b8922a" }}> .</span>
@@ -166,7 +167,7 @@ export default function Navbar() {
                     height="16"
                     viewBox="0 0 16 16"
                     fill="none"
-                    stroke={transparent ? "#ffffff" : "#0d0d0d"}
+                    stroke={transparent ? "#ffffff" : "#b8922a"}
                     strokeWidth="1.8"
                     strokeLinecap="round"
                   >
@@ -180,7 +181,7 @@ export default function Navbar() {
                     height="12"
                     viewBox="0 0 18 12"
                     fill="none"
-                    stroke={transparent ? "#ffffff" : "#0d0d0d"}
+                    stroke={transparent ? "#ffffff" : "#b8922a"}
                     strokeWidth="1.8"
                     strokeLinecap="round"
                   >
@@ -204,6 +205,29 @@ export default function Navbar() {
             background: "#ffffff",
           }}
         >
+          {/* Watermark logo — absolute center, behind everything */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              pointerEvents: "none",
+              zIndex: 0,
+            }}
+          >
+            <Image
+              src="/images/logo1.png"
+              alt=""
+              width={420}
+              height={420}
+              style={{
+                objectFit: "contain",
+                opacity: 0.06,
+              }}
+            />
+          </div>
           {/* Logo mark */}
           <div className="flex flex-col items-center pt-8 pb-5">
             <p
