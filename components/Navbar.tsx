@@ -44,6 +44,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/case-study", label: "Case Study" },
+    { href: "/about", label: "Our Story" },
     { href: "/contact", label: "Contact" },
   ];
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/ui/WattsappButton";
 
 export const metadata: Metadata = {
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -147,6 +148,7 @@ export default function RootLayout({
             }),
           }}
         />
+        <WhatsAppButton />
         <Navbar />
         {children}
         <Footer />

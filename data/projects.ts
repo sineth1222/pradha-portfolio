@@ -29,6 +29,70 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "tylon-clothing",
+    title: "TYLON Premium Clothing",
+    category: "E-commerce & CMS · Next.js",
+    image: "/assets/work/tylon.jpeg", // ඔයාගේ image path එක මෙතනට දාන්න
+    categoryTag: "Full Stack",
+    client: "TYLON Brand",
+    industry: "E-commerce / Premium Retail",
+    year: "2026",
+    description:
+      "A fresh, high-end fashion e-commerce storefront with a custom motivational content management subsystem designed to boost community engagement.",
+    fullDescription:
+      "TYLON is a premium digital retail storefront tailored for modern shoppers. Beyond traditional product browsing and seamless checkouts, the application uniquely integrates a motivational quote/speech management sub-portal managed by the administrator, fostering direct interaction through global likes.",
+    challenge:
+      "The brand envisioned a unique positioning strategy that goes beyond standard clothing sales by offering lifestyle inspiration. They needed a high-performance web experience capable of updating both product catalog and media content instantaneously.",
+    solution:
+      "Designed an elegant, premium user interface utilizing Next.js for high-speed layout rendering. Built a custom interactive Admin block for posting motivational content with real-time global counter states. Engineered an optimized mobile checkout pipeline for instant, hassle-free order placement.",
+    outcome:
+      "Successfully launched a unique community-driven brand ecosystem. Drastically increased user dwell time on the site due to the dynamic interactive feed, resulting in higher brand affinity and an uplift in conversion rates.",
+    results: [
+      { label: "UI Vibe", value: "Premium Fresh" },
+      { label: "Engagement", value: "Live Like Counter" },
+      { label: "CMS Capability", value: "Speech Management" },
+      { label: "Checkout", value: "Fast & Fluid" },
+    ],
+    tech: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Vercel"],
+    liveUrl: "https://tylon.vercel.app/",
+    githubUrl: "#", // GitHub link එකක් තියෙනවා නම් මෙතනට දාන්න
+    featured: true,
+    color: "bg-neutral-50", // Premium Fresh Look එකක් දෙන නිශ්ශබ්ද අලංකාර පැහැයක්
+    accentColor: "#171717",
+  },
+  {
+    id: "coco-cabana",
+    title: "Coco Cabana Beach Hotel",
+    category: "Hospitality & POS · Next.js",
+    image: "/assets/work/coco2.png", // ඔයාගේ image path එක මෙතනට දාන්න
+    categoryTag: "Full Stack",
+    client: "Coco Cabana Unawatuna",
+    industry: "Hospitality / Tourism",
+    year: "2026",
+    description:
+      "A premium beach hotel website featuring an intelligent room booking engine and a synchronized digital dining system for seamless room service.",
+    fullDescription:
+      "Coco Cabana is a fully integrated web platform tailored for a luxury boutique hotel in Unawatuna. It features a smart accommodation system that suggests available rooms dynamically, alongside an innovative digital menu that functions as both an in-room service portal and a table-ordering system for the physical dining area.",
+    challenge:
+      "The hotel required a friction-free booking process to reduce dependency on third-party OTAs. Additionally, managing room service and restaurant orders manually caused response delays, highlighting the need for a unified dashboard for operations.",
+    solution:
+      "Built a full-stack system with Next.js featuring a real-time availability filter that recommends matching rooms instantly. Developed a QR-ready digital dining menu allowing guests to order directly to their room or specific restaurant table number. Implemented an all-in-one Admin dashboard for complete tracking of bookings, rooms, and active food orders.",
+    outcome:
+      "Elevated guest convenience by blending accommodation and dining workflows into one app. Greatly reduced front-desk administrative friction, accelerated table turnover, and boosted overall room-service revenue.",
+    results: [
+      { label: "Room Booking", value: "Smart Suggest" },
+      { label: "Dining System", value: "Table & Room QR" },
+      { label: "Admin Panel", value: "Unified Control" },
+      { label: "Mobile Delivery", value: "100% Responsive" },
+    ],
+    tech: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Vercel"],
+    liveUrl: "https://coco-cabana.vercel.app/",
+    githubUrl: "#", // GitHub link එකක් තියෙනවා නම් මෙතනට දාන්න
+    featured: true,
+    color: "bg-orange-50", // Unawatuna වෙරළ තීරයට ගැළපෙන Warm Sand/Beach පැහැයක්
+    accentColor: "#ea580c",
+  },
+  {
     id: "medistore-pos",
     title: "Medistore POS",
     category: "Pharmacy POS · Next.js",

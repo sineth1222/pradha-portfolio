@@ -3,7 +3,7 @@ import { Instagram, Facebook, ShieldCheck, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#141412] border-t border-[#d4af37] mt-0">
+    <footer className="bg-[#141412] border-t border-[#d4af37]/40 mt-0">
       {/* Marquee /}
       <div className="bg-[#d4af37] py-2.5 overflow-hidden">
         <div className="marquee-container">
@@ -38,9 +38,13 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               {[
                 { href: "https://instagram.com", Icon: Instagram, label: "IG" },
-                { href: "https://facebook.com", Icon: Facebook, label: "FB" },
                 {
-                  href: "https://wa.me/94771234567",
+                  href: "https://www.facebook.com/profile.php?id=61589883841358",
+                  Icon: Facebook,
+                  label: "FB",
+                },
+                {
+                  href: "https://wa.me/94760805884",
                   Icon: MessageCircle,
                   label: "WA",
                 },
@@ -50,7 +54,7 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 border border-[#d4af37] flex items-center justify-center text-[#6B6B60] hover:border-[#d4af37] hover:text-[#d4af37]-light transition-all"
+                  className="w-9 h-9 border border-[#d4af37]/40 flex items-center justify-center text-[#6B6B60] hover:border-[#d4af37] hover:text-[#d4af37]-light transition-all"
                 >
                   <Icon size={14} />
                 </a>
@@ -144,7 +148,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-[#d4af37] mt-12 mb-4 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-[#d4af37]/40 mt-12 mb-4 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-mono text-[10px] text-[#6B6B60] tracking-widest text-center uppercase">
             © 2026 PRADHA. ALL RIGHTS RESERVED. Engineered with Precision.
           </p>

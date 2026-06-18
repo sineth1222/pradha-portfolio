@@ -729,12 +729,12 @@ export default function ContactPage() {
               {[
                 {
                   l: "GitHub",
-                  href: "https://github.com/pradha",
+                  href: "https://github.com/pradha-solutions",
                   sub: "github.com/pradha",
                 },
                 {
                   l: "LinkedIn",
-                  href: "https://www.linkedin.com/in/pradha-solutions-113122241/",
+                  href: "https://www.linkedin.com/in/pradha-solutions-65a819417/",
                   sub: "linkedin.com/in/pradha",
                 },
                 {

@@ -20,6 +20,9 @@ const config: Config = {
       },
       fontFamily: {
         serif: ["Cormorant Garamond", "serif"],
+        sans: ["var(--font-body)", "DM Sans", "sans-serif"],
+        display: ["var(--font-display)", "Oswald", "sans-serif"],
+        mono: ["var(--font-mono)", "Space Mono", "monospace"],
       },
     },
   },
