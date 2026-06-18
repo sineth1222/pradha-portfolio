@@ -37,7 +37,11 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               {[
-                { href: "https://instagram.com", Icon: Instagram, label: "IG" },
+                {
+                  href: "https://www.instagram.com/pradhasolutions/",
+                  Icon: Instagram,
+                  label: "IG",
+                },
                 {
                   href: "https://www.facebook.com/profile.php?id=61589883841358",
                   Icon: Facebook,
